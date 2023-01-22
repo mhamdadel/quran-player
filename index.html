@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player | Muhammed Adel</title>
+    <link rel="stylesheet" href="./style/audio.css">
+</head>
+<body>
+    <div class="audio-player">
+        <div class="audio-holder">
+            <audio id="audio" src="./audio/1.mp3" controls></audio>
+            <ul id="buttons" class="buttons">
+                <li class="button">
+                    <a href="#" id="playMode">play</a>
+                </li>
+                <li class="button">
+                    <a href="#" id="repeatMode">repeat</a>
+                </li>
+                <li class="button">
+                    <a href="#" id="shuffleMode">shuffle</a>
+                </li>
+            </ul>
+        </div>
+        <div class="list">
+            <table class="quran-list"  cellspacing="0" cellpadding="1" width="300" >
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Soura Name</th>
+                    </tr>
+                </thead>
+                <tbody id="listOfSoura">
+                    <tr id="1">
+                        <td>1</td>
+                        <td>الاخلاص</td>
+                    </tr>
+                    <tr id="2">
+                        <td>2</td>
+                        <td>الناس</td>
+                    </tr>
+                    <tr id="3">
+                        <td>3</td>
+                        <td>العلق</td>
+                    </tr>
+                    <tr id="4">
+                        <td>4</td>
+                        <td>الفلق</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script/audioplayer.js"></script>
+</body>
+</html>

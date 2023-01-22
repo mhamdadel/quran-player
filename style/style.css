@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 24px;
+}
+
+header {
+    background-color: #2fe02f;
+    height: 150px;
+    padding: 15px;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+nav>ul {
+    height: 100%;
+    list-style: none;
+}
+
+nav>ul>li {
+    display: inline-block;
+    font-size: 1rem;
+    height: 100%;
+    padding: 10px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    
+}
+
+article {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 40px;
+    height: 100px;
+    color: white;
+}

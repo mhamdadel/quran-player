@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 24px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.audio-player {
+    padding: 20px;
+    background-color: black;
+}
+
+.audio-holder {
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.audio-holder>.buttons {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.audio-holder>.buttons>.button {
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    width: 15%;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+.audio-holder>.buttons>.button.active {
+    background-color: #04AA6D;
+}
+
+.audio-holder>.buttons>.button>a {
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.audio-holder>.buttons>.button>a:visited {
+    color: black;
+}
+
+.list {
+    width: 70vw;
+    margin: auto;
+}
+
+.list>.quran-list {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.list>.quran-list tbody {
+    display: block;
+    overflow: auto;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.list>.quran-list tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.list>.quran-list th:first-child , .list>.quran-list th:last-child {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.list>.quran-list th:first-child {
+    width: 20%;
+}
+
+.list>.quran-list th:last-child {
+    width: 80%;
+}
+
+.list>.quran-list td:first-child {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 8px;
+    width: 20%;
+}
+
+.list>.quran-list td:last-child {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 8px;
+    width: 80%;
+}
